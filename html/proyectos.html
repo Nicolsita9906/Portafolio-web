@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proyectos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Antic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="header-logo">
+      <img src="../img/NVverde.png" alt="Logo">
+    </div>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../html/sobre-mi.html">Sobre mí</a></li>
+        <li><a href="../html/capacidades.html">Capacidades</a></li>
+        <li class="has-submenu">
+          <a href="../html/proyectos.html" aria-haspopup="true">Proyectos</a>
+          <ul class="submenu" role="menu">
+            <li role="menuitem"><a href="#proyectos" onclick="showTab('p1')">Calculadora Web</a></li>
+            <li role="menuitem"><a href="#proyectos" onclick="showTab('p2')">App del Clima</a></li>
+            <li role="menuitem"><a href="#proyectos" onclick="showTab('p3')">CRUD de Tareas</a></li>
+          </ul>
+        </li>
+        <li class="nav-cta"><a href="../html/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section id="proyectos">
+  <div class="container">
+    <div class="section-label fade-in"><h2>Proyectos</h2></div>
+
+    <div class="project-tabs fade-in" role="tablist">
+      <button class="tab-btn active" id="tab-p1" onclick="showTab('p1')" role="tab" aria-selected="true">Proyecto 1 — Linea de tiempo</button>
+      <button class="tab-btn" id="tab-p2" onclick="showTab('p2')" role="tab" aria-selected="false">Proyecto 2 — Formulario 2</button>
+      <button class="tab-btn" id="tab-p3" onclick="showTab('p3')" role="tab" aria-selected="false">Proyecto 3 — Formulario proveedores</button>
+    </div>
+
+    <div class="project-panel active" id="panel-p1">
+      <div class="project-card fade-in">
+        <div class="project-thumb"><i class="fa-solid fa-pager"></i></div>
+        <div class="project-info">
+          <h3>Linea de tiempo</h3>
+          <p>Página web con información sobre la evolución del internet, tiene navegación entre ventanas y con manejo de css para un estilo agradable accesible.</p>
+          <div class="tags">
+            <span class="tag">HTML5</span><span class="tag">CSS</span>
+            <span class="tag">JavaScript</span><span class="tag">Responsive</span>
+          </div>
+          <div style="margin-top:18px">
+            <a href="https://github.com/Nicolsita9906/timeLineDW.git" class="btn btn-primary" style="font-size:.875rem; padding:9px 18px">
+              <i class="fa-brands fa-github"></i> Ver en GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-panel" id="panel-p2">
+      <div class="project-card fade-in">
+        <div class="project-thumb" style="background:#4a6741"><i class="fa-regular fa-file"></i></div>
+        <div class="project-info">
+          <h3>Formulario</h3>
+          <p>Formulario para hoja de vida, un estilo profesional y agradable, con los campos necesarios para información del postulante.</p>
+          <div class="tags">
+            <span class="tag">HTML5</span><span class="tag">CSS</span><span class="tag">JavaScript ES6</span>
+          </div>
+          <div style="margin-top:18px">
+            <a href="https://github.com/Nicolsita9906/FormularioDW.git" class="btn btn-primary" style="font-size:.875rem; padding:9px 18px">
+              <i class="fa-brands fa-github"></i> Ver en GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-panel" id="panel-p3">
+      <div class="project-card fade-in">
+        <div class="project-thumb" style="background:#7f5539"><i class="fa-solid fa-boxes-packing"></i></div>
+        <div class="project-info">
+          <h3>Formulario de proveedores</h3>
+          <p>Formulario con varias secciones para el ingreso de datos de posibles proveedores, con manejo de HTML, CSS para un estilo agradable y profeccional y JS.</p>
+          <div class="tags">
+            <span class="tag">HTML5</span><span class="tag">CSS </span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div style="margin-top:18px">
+            <a href="https://github.com/Nicolsita9906/Formulario2DW.git" class="btn btn-primary" style="font-size:.875rem; padding:9px 18px">
+              <i class="fa-brands fa-github"></i> Ver en GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script src="../js/script.js"></script>
+
+<footer>
+  <div class="footer-inner">
+    <p class="footer-name">Nicol Valeria Ocampo Bernal</p>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/nicolsita9906/" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://wa.me/573004217628" class="social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://github.com/Nicolsita9906" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/nicol-valeria-ocampo-bernal-25b76735a/" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Nicol Valeria Ocampo Bernal · Todos los derechos reservados</p>
+  </div>
+</footer>
+
+</body>
+</html>

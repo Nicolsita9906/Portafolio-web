@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre mí</title>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Antic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="header-logo">
+            <img src="../img/NVverde.png" alt="Logo">
+        </div>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../html/sobre-mi.html">Sobre mí</a></li>
+                <li><a href="../html/capacidades.html">Capacidades</a></li>
+                <li class="has-submenu">
+                    <a href="../html/proyectos.html" aria-haspopup="true">Proyectos</a>
+                    <ul class="submenu" role="menu">
+                        <li role="menuitem"><a href="#proyectos" onclick="showTab('p1')">Calculadora Web</a></li>
+                        <li role="menuitem"><a href="#proyectos" onclick="showTab('p2')">App del Clima</a></li>
+                        <li role="menuitem"><a href="#proyectos" onclick="showTab('p3')">CRUD de Tareas</a></li>
+                    </ul>
+                </li>
+                <li class="nav-cta"><a href="../html/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="sobre-mi">
+    <div class="container">
+        <div class="section-label fade-in"><h2>Sobre mí</h2></div>
+        <div class="sobre-grid fade-in">
+            <div class="sobre-text">
+                <p>Soy estudiante de Ingeniería de Software en la Institución Universitaria EAM, actualmente cursando el quinto semestre. Me entusiasma la intersección entre la lógica de la programación y la experiencia de usuario.</p>
+                <p>Mi enfoque se centra en el desarrollo web tanto front-end como back-end, buscando siempre que cada proyecto sea funcional, limpio y accesible. Disfruto aprender nuevas tecnologías y aplicarlas en proyectos reales que generen impacto.</p>
+                <p>Trabajo bien en equipo, me comunico de manera clara y tengo especial cuidado por los detalles tanto en el código como en el diseño. Estoy en búsqueda activa de oportunidades de práctica o colaboración que me permitan seguir creciendo profesionalmente.</p>
+                <a href="https://drive.google.com/file/d/1pxtmIEIa2xvv4FOOcDQZXFxKlYBSf9Hb/view?usp=sharing" class="btn btn-primary" style="margin-top:4px"><i class="fa-solid fa-download"></i> Descargar CV</a>
+            </div>
+            <div class="sobre-aside">
+                <div class="sobre-img">
+                    <img src="../img/completo.png" alt="Foto sobre mí">
+                </div>
+                <div class="chips">
+                    <div class="chip"><i class="fa-solid fa-graduation-cap"></i> Ingeniería de Software</div>
+                    <div class="chip"><i class="fa-solid fa-building-columns"></i> EAM · V Semestre</div>
+                    <div class="chip"><i class="fa-solid fa-location-dot"></i> Armenia, Quindío</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-inner">
+        <p class="footer-name">Nicol Valeria Ocampo Bernal</p>
+        <div class="footer-social">
+            <a href="https://www.instagram.com/nicolsita9906/" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/573004217628" class="social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://github.com/Nicolsita9906" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nicol-valeria-ocampo-bernal-25b76735a/" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Nicol Valeria Ocampo Bernal · Todos los derechos reservados</p>
+    </div>
+</footer>
+
+</body>
+</html>
